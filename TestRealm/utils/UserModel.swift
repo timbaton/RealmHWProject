@@ -15,5 +15,5 @@ class UserModel: Object {
     dynamic var id = 0
     dynamic var name = String()
     dynamic var age = 0
-    
+
 }

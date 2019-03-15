@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="dBy-5m-qNh">
             <objects>
-                <viewController id="Z7G-Yy-to4" customClass="ViewController" customModule="TestRealm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Z7G-Yy-to4" customClass="MainScreenViewController" customModule="TestRealm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KM7-Zh-XzA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,12 +23,17 @@
                     <navigationItem key="navigationItem" id="YUV-6f-J2e">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="1UN-PC-cz5">
                             <connections>
-                                <action selector="itemPressed:" destination="Z7G-Yy-to4" id="JdA-RJ-Fhm"/>
+                                <action selector="itemPressed:" destination="Z7G-Yy-to4" id="FSG-TI-ogx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="369-c6-UgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Tdq-8H-Sh0" customClass="MainScreenConf" customModule="TestRealm" customModuleProvider="target">
+                    <connections>
+                        <outlet property="viewController" destination="Z7G-Yy-to4" id="dxX-KQ-jr0"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="1480.8" y="-560.86956521739137"/>
         </scene>
